@@ -4,7 +4,7 @@
 @extends('layouts.my')
 @section('content')
 <div class="container">
-    <h1>{{ $title }}</h1>
+    <h1>{{ $title }}!</h1>
     <form action="{{ url('posts/'.$post->id) }}" method="post">
         @csrf
         @method('PUT')
